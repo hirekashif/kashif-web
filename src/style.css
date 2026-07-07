@@ -1207,7 +1207,8 @@ p {
 
 .footer-links-grid {
   display: flex;
-  gap: 80px;
+  flex-wrap: wrap;
+  gap: 48px 80px;
 }
 
 .footer-column h4 {

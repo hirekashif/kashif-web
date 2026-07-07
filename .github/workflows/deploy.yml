@@ -1,0 +1,66 @@
+name: Deploy site + docs to GitHub Pages
+
+# Builds the marketing site (root, Vite) and the docs (docs/, VitePress) and publishes them as a
+# single Pages site: marketing at /, docs at /docs/. One GitHub Pages site can only serve one
+# artifact, so we assemble both into dist/ and deploy that.
+
+on:
+  push:
+    branches: [main]   # adjust if you deploy from a different branch
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      # 1. Marketing site → dist/
+      - name: Build marketing site
+        run: |
+          npm ci
+          npm run build
+
+      # 2. Docs (VitePress, base '/docs/') → docs/.vitepress/dist
+      - name: Build docs
+        run: |
+          cd docs
+          npm ci
+          npm run build
+
+      # 3. Assemble: docs under /docs, plus Pages housekeeping.
+      - name: Assemble Pages output
+        run: |
+          mkdir -p dist/docs
+          cp -r docs/.vitepress/dist/. dist/docs/
+          # Keep the custom domain (confirm this matches your Pages settings).
+          echo 'hirekashif.com' > dist/CNAME
+          # Prevent Jekyll from stripping files/dirs that start with an underscore.
+          touch dist/.nojekyll
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

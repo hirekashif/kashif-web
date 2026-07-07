@@ -1,0 +1,15 @@
+{
+  "name": "kashif-docs",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Public Kashif documentation site (VitePress). Product + user guides only — no internal/ops content.",
+  "scripts": {
+    "dev": "vitepress dev",
+    "build": "vitepress build",
+    "preview": "vitepress preview"
+  },
+  "devDependencies": {
+    "vitepress": "^1.6.3"
+  }
+}
