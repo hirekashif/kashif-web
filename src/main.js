@@ -18,7 +18,7 @@ if (pricingSwitch) {
       labelMonthly.classList.remove('active');
       labelAnnual.classList.add('active');
       
-      // Calculate 20% discount prices for SMB pricing
+      // Calculate 20% discount prices for annual plan pricing
       // $29/mo -> $23/mo billed annually
       // $89/mo -> $71/mo billed annually
       // $249/mo -> $199/mo billed annually
@@ -104,10 +104,10 @@ if (menuToggleBtn && navMenuList) {
       navMenuList.style.left = '0';
       navMenuList.style.width = '100%';
       navMenuList.style.flexDirection = 'column';
-      navMenuList.style.background = 'rgba(3, 7, 18, 0.95)';
-      navMenuList.style.backdropFilter = 'blur(20px)';
+      navMenuList.style.background = 'rgba(246, 244, 239, 0.97)';
+      navMenuList.style.backdropFilter = 'saturate(180%) blur(16px)';
       navMenuList.style.padding = '20px';
-      navMenuList.style.borderBottom = '1px solid rgba(255, 255, 255, 0.08)';
+      navMenuList.style.borderBottom = '1px solid rgba(28, 27, 24, 0.12)';
       navMenuList.style.gap = '20px';
       navMenuList.style.zIndex = '999';
     }

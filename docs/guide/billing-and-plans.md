@@ -11,7 +11,7 @@ unless you subscribe.
 
 ## Plans
 
-Entitlements are metered on the two units that matter for SMB hiring:
+Entitlements are metered on the two units that matter for hiring:
 
 | Plan | Active published jobs | Applicants screened / month |
 | --- | --- | --- |
@@ -22,6 +22,14 @@ Entitlements are metered on the two units that matter for SMB hiring:
 
 Usage against these limits is shown on the Billing view. Hitting a limit (for example, trying to
 publish a second job on Free) prompts you to upgrade rather than silently failing.
+
+Beyond those quotas, plans differ on a few capabilities:
+
+- **Careers page branding** (logo, colors, tagline) — Starter and above.
+- **Advanced team roles** and the **embeddable careers widget** — Pro and above.
+- **Workspace members (seats)** — Free 2, Starter 5, Pro & Enterprise unlimited.
+
+These turn on automatically the moment your plan changes — no waiting on support.
 
 > **Pricing** is configured per deployment through Moyasar (in SAR by default). The plan cards in
 > the app show the deployment's indicative pricing.
