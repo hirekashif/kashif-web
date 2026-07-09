@@ -15,7 +15,12 @@ surface it lives in. For how to use each, follow the linked user guide.
 - **One-click publish** — mint a stable public careers link; unpublish stops applications.
 - **Branded per-job careers page** — mobile-first apply page themed with the workspace logo,
   colors, and tagline.
-- **Company careers page** — one branded URL (`/careers/company/:slug`) listing all open roles.
+- **Company careers page** — one branded URL (`/careers/company/:slug`) listing all open roles,
+  with each role page cross-linking back to the full list.
+- **Careers subdomain** — the company careers page is also served at
+  `<workspace-slug>.hirekashif.com`, with each role at `<workspace-slug>.hirekashif.com/<role>`.
+- **Embeddable careers widget** — a one-line `<script>` renders your live open roles on your own
+  website (Webflow, WordPress, custom), themed to your brand. Available on Pro.
 - **Apply questions** — typed questions (text, number, select, boolean, etc.) collected at apply.
 - **Deterministic knockout rules** — hard gates on apply questions that decline disqualified
   applicants instantly, without an AI call.
