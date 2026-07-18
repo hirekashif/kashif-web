@@ -2,8 +2,8 @@
 
 ## What Kashif is
 
-Kashif is an **inbound hiring platform for small and mid-size companies**. It replaces the
-spreadsheet-plus-email-plus-five-tools stack that most SMBs use to hire, with one workspace that
+Kashif is an **inbound hiring platform**. It replaces the
+spreadsheet-plus-email-plus-five-tools stack that most teams use to hire, with one workspace that
 takes a role from *"we need to hire someone"* to *"they start Monday"*.
 
 The product's promise, in one line:
@@ -16,17 +16,17 @@ Three commitments follow from that positioning, and the whole product is built a
    stage change, a private status page they can check any time.
 2. **Every AI decision can be shown to a lawyer.** Scores come with cited evidence, a
    non-removable fairness rule set, optional blind screening, and a per-role compliance export.
-3. **A founder can go from blank page to booked interviews in one sitting** — and pay for it
+3. **Anyone can go from blank page to booked interviews in one sitting** — and pay for it
    self-serve, without talking to sales.
 
 ## Who it's for
 
-- **Primary segment:** small/medium companies hiring salaried roles (not agencies, not
+- **Primary segment:** companies hiring salaried roles (not agencies, not
   high-volume hourly).
 - **Primary domain:** IT and tech roles first — screening defaults, calibration, and skill
   matching are tuned for technical candidates, though the platform is domain-agnostic.
-- **Primary users:** founders, office managers, and small HR/recruiting teams who hire
-  occasionally and don't want an enterprise ATS.
+- **Primary users:** hiring managers, HR/recruiting teams, and founders who want a fast,
+  modern hiring workflow without a clunky legacy ATS.
 
 ## The core motion (inbound)
 
@@ -42,7 +42,7 @@ unified pipeline; it is not the front door.
 ## What makes it different
 
 - **Explainable AI with a paper trail.** Every fit score carries evidence citations and a full
-  provenance record (provider, model, prompt version, input hash, output, cost). Most SMB ATSs
+  provenance record (provider, model, prompt version, input hash, output, cost). Most ATSs
   give you a black-box number or nothing.
 - **Workspace-owned communication.** Candidate email and interview invites go through the
   company's *own* connected Google Workspace or Microsoft 365 mailbox — better deliverability,
@@ -50,7 +50,7 @@ unified pipeline; it is not the front door.
 - **Defensible by default.** A hardcoded fairness preamble the AI can never be told to ignore,
   deterministic knockout rules that keep hard gates under human control, optional blind screening,
   and an exportable compliance pack.
-- **SMB-honest pricing.** Metering is on units a founder understands — active published jobs and
+- **Honest pricing.** Metering is on units anyone understands — active published jobs and
   applicants screened — not seats or sourcing credits.
 - **Cost-controlled AI.** A Postgres-backed job queue with per-org caps, per-job/day screening
   limits, circuit breakers, and dead-lettering means AI spend can't run away.
@@ -58,7 +58,7 @@ unified pipeline; it is not the front door.
 ## Plans & pricing
 
 Kashif has four plan tiers. Entitlements are metered on **active published jobs** and
-**applicants screened per month** (the units SMBs understand):
+**applicants screened per month** (the units anyone understands):
 
 | Plan | Active published jobs | Applicants screened / month | Typical fit |
 | --- | --- | --- | --- |

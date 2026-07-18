@@ -1,0 +1,52 @@
+/* Kashif — Cobalt design tokens (Hallmark · modern-minimal). Portable across projects. */
+:root {
+  /* Fonts */
+  --font-display: 'Space Grotesk', system-ui, -apple-system, sans-serif;
+  --font-body:    'Inter', system-ui, -apple-system, sans-serif;
+  --font-mono:    'JetBrains Mono', ui-monospace, 'SF Mono', Menlo, monospace;
+
+  /* Colour — Cobalt (cool near-white + one electric signal) */
+  --color-paper:       oklch(98.5% 0.004 250);
+  --color-paper-2:     oklch(96.8% 0.005 255);
+  --color-paper-3:     oklch(94.6% 0.006 256);
+  --color-ink:         oklch(24% 0.02 258);
+  --color-ink-2:       oklch(34% 0.018 257);
+  --color-ink-3:       oklch(52% 0.014 258);
+  --color-rule:        oklch(90% 0.008 255);
+  --color-rule-2:      oklch(84% 0.012 256);
+  --color-accent:      oklch(58% 0.20 256);
+  --color-accent-strong: oklch(52% 0.20 256);
+  --color-accent-ink:  oklch(99% 0.01 256);
+  --color-accent-soft: oklch(95.5% 0.03 256);
+  --color-accent-line: oklch(82% 0.09 256);
+  --color-graphite:    oklch(22% 0.016 260);
+  --color-graphite-2:  oklch(26% 0.017 260);
+  --color-graphite-rule: oklch(34% 0.02 260);
+  --color-graphite-ink: oklch(90% 0.008 258);
+  --color-graphite-ink-2: oklch(68% 0.013 258);
+  --color-graphite-accent: oklch(72% 0.16 256);
+  --color-positive:      oklch(58% 0.13 158);
+  --color-positive-soft: oklch(95% 0.04 158);
+  --color-positive-line: oklch(82% 0.08 158);
+  --color-warn:        oklch(64% 0.13 55);
+  --color-focus:       oklch(58% 0.20 256);
+
+  /* Spacing — 4pt scale */
+  --space-3xs: 0.25rem; --space-2xs: 0.5rem; --space-xs: 0.75rem;
+  --space-sm: 1rem;     --space-md: 1.5rem;  --space-lg: 2rem;
+  --space-xl: 3rem;     --space-2xl: 4.5rem; --space-3xl: 7rem;
+
+  /* Type scale */
+  --text-xs: 0.75rem;   --text-sm: 0.875rem;  --text-base: 1rem;
+  --text-md: 1.0625rem; --text-lg: 1.25rem;   --text-xl: 1.5rem;
+  --text-2xl: 2rem;     --text-3xl: 2.5rem;   --text-display-s: 3rem;
+  --text-display: clamp(2.35rem, 1.4rem + 3.6vw, 3.85rem);
+
+  /* Motion */
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --dur-short: 200ms; --dur-mid: 320ms;
+
+  /* Radii */
+  --radius-sm: 6px; --radius-md: 10px; --radius-lg: 14px; --radius-pill: 9999px;
+}

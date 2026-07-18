@@ -5,7 +5,7 @@ import { defineConfig } from 'vitepress'
 // repo under internal-docs/ and are never served or published. srcDir is this docs/ folder only.
 export default defineConfig({
   title: 'Kashif Docs',
-  description: 'Product and user documentation for Kashif — the inbound hiring platform for SMBs.',
+  description: 'Product and user documentation for Kashif — the inbound hiring platform.',
   lang: 'en-US',
   // Hosted at hirekashif.com/docs by default; change to '/' if served on its own subdomain.
   base: '/docs/',
@@ -13,6 +13,9 @@ export default defineConfig({
   lastUpdated: true,
   head: [
     ['meta', { name: 'robots', content: 'index,follow' }],
+    ['link', { rel: 'preconnect', href: 'https://fonts.googleapis.com' }],
+    ['link', { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: '' }],
+    ['link', { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap' }],
   ],
   themeConfig: {
     nav: [
@@ -53,7 +56,7 @@ export default defineConfig({
     },
     search: { provider: 'local' },
     footer: {
-      message: 'Kashif — inbound hiring for SMBs',
+      message: 'Kashif — the inbound hiring platform',
       copyright: '© Kashif',
     },
   },

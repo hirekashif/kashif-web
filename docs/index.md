@@ -2,7 +2,7 @@
 layout: home
 hero:
   name: Kashif Docs
-  text: The inbound hiring platform for SMBs
+  text: The inbound hiring platform
   tagline: Post a job, get AI-ranked applicants with reasons, schedule interviews, and hire — while every candidate gets an answer.
   actions:
     - theme: brand

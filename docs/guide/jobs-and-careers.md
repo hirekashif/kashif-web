@@ -84,13 +84,39 @@ The publish controls then show:
   (contact → job questions → resume or LinkedIn → review & consent). Themed with your logo,
   primary color, and tagline (set under **Settings → Branding**, on paid plans).
 - **Company careers page** (`/careers/company/<workspace-slug>`) — one branded URL listing all
-  your open roles, each linking to its apply page.
+  your open roles, each linking to its apply page. Every role page also cross-links back to this
+  list ("More open roles at your company").
+- **Careers subdomain** — the same company careers page is served at
+  `<workspace-slug>.hirekashif.com`, with each role at `<workspace-slug>.hirekashif.com/<role>`.
+  It's a cleaner link to share; find it under **Settings → Workspace**.
 
 ### Search-engine discoverability (SEO)
 
 Published pages are indexable and include `JobPosting` structured data (Google Jobs eligibility),
 and the platform serves a `sitemap.xml`. When a role is unpublished or filled, its page returns
 `410 Gone` so search engines drop it promptly.
+
+## Embed your open roles on your own website
+
+Put your live openings directly on your company site — no iframe, no manual updates. Copy the
+snippet from **Settings → Workspace → Embed on your website** and paste it where the roles should
+appear:
+
+```html
+<script src="https://app.hirekashif.com/embed.js" data-org="your-workspace-slug" async></script>
+```
+
+- Renders your **currently published roles**, updated automatically as you publish or close them.
+- Themed to your brand color and **isolated in a shadow root**, so it can't clash with your site's
+  styles. Works on Webflow, WordPress, Framer, or any custom HTML.
+- Each role links to its hosted apply page, so screening, anti-spam, and compliance stay handled
+  by Kashif.
+
+Optional attributes: `data-target="#css-selector"` to choose the mount point, and `data-limit="10"`
+to cap how many roles show.
+
+> The widget is available on **Pro and above**. For a fully server-rendered careers page on your
+> own domain (`careers.yourcompany.com`), talk to us about custom domains.
 
 ## Job lifecycle
 
